@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Live Scoreboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Firebase -->
+  <script defer src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <h1>Scoreboard</h1>
+  <div class="scoreboard">
+    <div>
+      <h2>Team A: <span id="scoreA">0</span></h2>
+      <button onclick="updateScore('A', 1)">+1</button>
+      <button onclick="updateScore('A', -1)">-1</button>
+    </div>
+    <div>
+      <h2>Team B: <span id="scoreB">0</span></h2>
+      <button onclick="updateScore('B', 1)">+1</button>
+      <button onclick="updateScore('B', -1)">-1</button>
+    </div>
+  </div>
+</body>
+</html>
+

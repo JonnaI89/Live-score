@@ -1,0 +1,15 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 2rem;
+}
+.scoreboard {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+button {
+  margin: 0.5rem;
+  padding: 1rem;
+  font-size: 1rem;
+}
